@@ -1,0 +1,124 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 79,
+        "name": "Validate The search result key version you want to receive back from your search. The default is 2",
+        "description": "",
+        "id": "itunes-search-api;validate-the-search-result-key-version-you-want-to-receive-back-from-your-search.-the-default-is-2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6603679300,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "Call i tunes search api with encoded url with parameters \"term\" as \"jack johnson\" and \"media\" as \"all\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "term",
+                  "offset": 58
+                },
+                {
+                  "val": "jack johnson",
+                  "offset": 68
+                },
+                {
+                  "val": "media",
+                  "offset": 87
+                },
+                {
+                  "val": "all",
+                  "offset": 98
+                }
+              ],
+              "location": "StepDefinition.Call_i_tunes_search_api_with_encoded_url_with_multiple_parameter(String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4278900,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "Verify status code is \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinition.Verify_status_code_is_200(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29375800,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "Verify result count is \"50\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinition.Verify_result_count_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7281800,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "Verify version number is \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefinition.Verify_version_number_is(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Project"
+          },
+          {
+            "name": "@TC\u003d12"
+          }
+        ]
+      }
+    ],
+    "name": "iTunes search API",
+    "description": "",
+    "id": "itunes-search-api",
+    "keyword": "Feature",
+    "uri": "src/test/java/iTunesSearchAPI.feature",
+    "tags": [
+      {
+        "name": "@Project",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
